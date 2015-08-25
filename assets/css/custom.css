@@ -1,0 +1,126 @@
+.site-login-block
+	{
+	padding: 25px;
+    background-color: #eee;
+    border: 3px dotted rgba(0,0,0,0.1);
+	margin-top: 30px;
+    }
+.site-login-block .page-header
+	{
+	margin-top: 0px;
+	border-bottom: 0px;
+	}
+.site-login-block  .page-header h3
+	{
+	margin-top: 0px;
+	}
+.site-login-block  [name="email"]
+	{
+	outline: 0;
+    border-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;
+	}
+.site-login-block  [name="email"]
+	{
+	outline: 0;
+    border-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;
+	}
+.site-login-block  [name="password"]
+	{
+	outline: 0;
+    border-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+	}
+.site-login-block  .email-form-group
+	{
+	margin-bottom: 0px;
+	}
+.site-login-block  [type="submit"]
+	{
+	border-color: #0099e6 #0099e6 #0077b3;
+    background-color: #0099e6;
+	}
+.site-login-block [type="submit"]:hover
+	{
+	background-position: 0px 0px;
+	}
+.site-login-block .login-link a
+	{
+    position: relative;
+    top: 15px;
+	}
+.default-container.container
+	{
+	padding-top: 50px;
+	}
+.sidebar 
+	{
+    display: block;
+    padding: 80px 0px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #DAD9D9;
+	position: fixed;
+    top: 50px;
+    height: 100%;
+    }
+.nav-sidebar > .active > a 
+	{
+    color: #fff;
+    background-color: #428bca;
+	}
+.section-margin-top	
+	{
+	margin-top: 20px;
+	}
+.item-at-bottom 
+	{
+    bottom: 55px;
+    position: absolute !important;
+    padding: 0px 0px 0px 12px;
+    width: 100%;
+    font-size: 11px;
+    line-height: 20px;
+	}
+.item-at-bottom a
+	{
+	display: inline !important;
+    padding: 0px !important;
+	}
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus
+	{
+	background-color: #428bca !important;
+	outline: 0;
+	}
+.login-page-image
+	{
+	border: 5px solid #0088cc;
+    border-radius: 150px;
+    height: 100px;
+    width: 100px;
+	}
+.pull-right-specific-class
+	{
+	float: right;
+	}
+@media (max-width: 991px) 
+	{
+	.pull-right-specific-class
+		{
+		float: none;
+		padding-left: 0px !important;
+		}
+	.sidebar 
+		{
+		padding: 20px 0px 20px;
+		position: relative;
+		top: 0px;
+		margin-bottom: 30px;
+		}
+	.sidebar .item-at-bottom
+		{
+		display: none;
+		}
+	}	
