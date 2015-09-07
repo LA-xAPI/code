@@ -25,8 +25,8 @@
 				<p><b>SID:</b> 91017d590a69dc49807671a51f10ab7f </p>
 				<p><b>AUTH:</b> dd07852b0edaf71b39e415c395ec054a</p>
 				<br /><br />
-				<p><a href="http://code.personal-data-locker.org/chromeExt" target="_blank">Click Here</a> to get our Chrome Extension</p>
-				<p><a href="http://www.cnet.com/how-to/how-to-install-chrome-extensions-manually/" target="_blank">How to Install Chrome Extension</a></p>
+				<p><a href="https://chrome.google.com/webstore/detail/pdl/ajnahfidcbfdnpflgagajffjkgffhgon" target="_blank">Click Here</a> to get our Chrome Extension</p>
+				
 			</div>
 		</div>
 	</div>

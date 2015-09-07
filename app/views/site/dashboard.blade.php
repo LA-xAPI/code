@@ -88,20 +88,21 @@ $(function ()
         title: {
             text: 'Statements count by Day',
             x: -20 //center
-        },
+            },
         xAxis: {
             categories: {{$date_array}}
-        },
+            },
         legend: {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'middle',
             borderWidth: 0
-        },
+            },
         series: [{
 			name: 'Statements Per Day',
             data: {{$date_counts}}
-        }]
+            }],
+        credits: false
     });
 });
 </script>

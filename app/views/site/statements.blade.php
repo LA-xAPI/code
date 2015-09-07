@@ -10,6 +10,21 @@
 <div class="page-header" style="margin-top: 0px">
 	<h1 style="margin-top: 0px">Reporting</h1>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Filter By Activity Name</label>
+                <select name="activityName" class="form-control" style="margin-left: 20px;" id="activityName">
+                    <option value="all">All Statements</option>
+                    @foreach($activityNames as $activityName)
+                    <option value="{{$activityName->activity_name}}">{{$activityName->activity_name}}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 <table id="statements" class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
@@ -20,20 +35,43 @@
 			<th>Activity</th>
 		</tr>
 	</thead>
-	<tbody>
-		@foreach($statements as $statement)
-		<tr>
-			<td>{{$statement->timestamp}}</td>
-			<td>{{$statement->verb_id}}</td>
-			<td>{{$statement->verb_value}}</td>
-			<td>{{$statement->verb_description}}</td>
-			<td>{{$statement->activity_name}}</td>
-		</tr>
-		@endforeach
-	</tbody>
+    <tbody>
+    </tbody>
 </table>
-{{ $statements->links() }}
+
 @stop
 @section('scripts')
-
+<script type="text/javascript">
+var oTable;
+$(document).ready(function() 
+    {
+    var activityName = $("#activityName option:selected").val();
+    
+    $("#activityName").change(function()
+        {
+        activityName = $("#activityName option:selected").val();
+        
+        oSettings.sAjaxSource  = "{{ URL::to('statements/data?activityName="+activityName+"') }}";
+        oTable.fnDraw();
+        });
+    
+    oTable = $('#statements').dataTable( 
+        {
+        "sPaginationType": "bootstrap",
+        "oLanguage": {
+            "sLengthMenu": "_MENU_ records per page"
+            },
+        "bProcessing": true,
+        "bServerSide": true,
+        "sAjaxSource": "{{ URL::to('statements/data?activityName="+activityName+"') }}",
+        "fnInitComplete": function (oSettings, json) {
+            $("[name='statements_length']").addClass("form-control");
+            $("#statements_filter [type='text']").addClass("form-control");
+            },
+        "fnDrawCallback": function ( oSettings ) {
+            }
+        });
+    var oSettings = oTable.fnSettings(); 
+    });
+</script>
 @stop

@@ -37,6 +37,16 @@
                 <button tabindex="3" type="submit" class="btn btn-primary col-md-12">{{ Lang::get('confide::confide.login.submit') }}</button>
                 <a class="" href="forgot">Forgot Password</a>
             </div>
+			<br>
+							
+
         </div>
-    </fieldset>
+								
+							<hr color="blue">		<div class="row navbar-ex1-collapse" style="margin:5px">Copyright (C) 2015  personal-data-locker.org<br>
+
+    
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or any later version.
+	<a href="http://www.gnu.org/licenses/agpl" target="_blank" title="AGPLv3 license">AGPL</a>
+				</div>		    </fieldset>
 </form>
