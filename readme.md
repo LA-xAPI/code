@@ -1,6 +1,3 @@
 #Personal-Data-Locker Source code
 
-
-Personal-Data-Locker Source code
-
-#This readme is under construction. 
+An open source learning record store. Personal Data Locker shows data in meaningful form using charts and tables. It is build using [laravel](http://laravel.com/) a PHP framework. Personal-Data-Locker is an API which allows user to generate statements. Statements can be generated from its chrome extension available on [chrome extension store](https://chrome.google.com/webstore/detail/pdl/ajnahfidcbfdnpflgagajffjkgffhgon?hl=en-US). Extension source code will be available soon. 
