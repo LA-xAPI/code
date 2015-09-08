@@ -101,26 +101,3 @@
     height: 100px;
     width: 100px;
 	}
-.pull-right-specific-class
-	{
-	float: right;
-	}
-@media (max-width: 991px) 
-	{
-	.pull-right-specific-class
-		{
-		float: none;
-		padding-left: 0px !important;
-		}
-	.sidebar 
-		{
-		padding: 20px 0px 20px;
-		position: relative;
-		top: 0px;
-		margin-bottom: 30px;
-		}
-	.sidebar .item-at-bottom
-		{
-		display: none;
-		}
-	}	
