@@ -8,7 +8,7 @@ To install Personal-Data-Locker, clone Personal-Data-Locker from [github](https:
 
 ###Personal-Data-Locker Chrome Extension
 
-You can download Personal-Data-Locker extension [here](https://chrome.google.com/webstore/detail/pdl/ajnahfidcbfdnpflgagajffjkgffhgon?hl=en-US). After installing our extension, it will ask for "SID" and "AUTh", Copy "SID" and "AUTH" from your Personal-Data-Locker dashboard and click "Authenticate". After successful authentication it will start generating statements on page refresh and when new tab is opened.
+You can download Personal-Data-Locker extension [here](https://chrome.google.com/webstore/detail/pdl/ajnahfidcbfdnpflgagajffjkgffhgon?hl=en-US). After installing our extension, it will ask for "SID" and "AUTH", Copy "SID" and "AUTH" from your Personal-Data-Locker dashboard and click "Authenticate". After successful authentication it will start generating statements on page refresh and when new tab is opened.
 
 Extension generates statements with 4 different "activity name", there details are below
 
