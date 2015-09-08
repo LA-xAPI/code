@@ -103,6 +103,8 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::controller('/', 'AdminDashboardController');
 });
 Route::get('statements', 'AdminController@statements');
+Route::get('statements/data', 'AdminController@statementsData');
+Route::get('stats', 'AdminController@statistics');
 Route::get('dashboard', 'AdminController@dashboard');
 
 /** ------------------------------------------
