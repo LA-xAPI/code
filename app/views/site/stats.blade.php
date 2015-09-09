@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="page-header" style="margin-top: 0px">
-	<h1 style="margin-top: 0px">Statistics</h1>
+	<h1 style="margin-top: 0px">Activity Graph</h1>
 </div>
 <div class="row">
 	<div class="col-md-12">
@@ -49,7 +49,7 @@ $(document).ready(function()
             type: 'pie'
             },
         title: {
-            text: 'Ativity Name Count by Date Range'
+            text: 'Activity Name Count by Date Range'
             },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -68,7 +68,7 @@ $(document).ready(function()
                 }
             },
         series: [{
-            name: "Brands",
+            name: "Percentage",
             colorByPoint: true,
             data: {{$popular_activities}}
             }],

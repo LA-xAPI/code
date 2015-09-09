@@ -80,8 +80,8 @@
                         @endif
                         <li><a href="{{{ URL::to('dashboard') }}}">Dashboard</a></li>
                         
-						<li><a href="{{{ URL::to('statements') }}}">Reporting</a></li>
-						<li><a href="{{{ URL::to('stats') }}}">Stats</a></li>
+						<li><a href="{{{ URL::to('statements') }}}">Statements</a></li>
+						<li><a href="{{{ URL::to('stats') }}}">Activity Graph</a></li>
                         <li><a href="{{{ URL::to('user') }}}">Logged in as {{{ Auth::user()->username }}}</a></li>
                         <li><a href="{{{ URL::to('user/logout') }}}">Logout</a></li>
                         @else
